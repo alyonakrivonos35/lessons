@@ -1,0 +1,76 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+* {
+	color:black;
+}
+
+h1 {
+	color: red;
+}
+h2 {
+color: rgb(43, 46, 226);
+}
+
+.navigation__link {
+	color: rgb(183, 95, 12);
+}
+
+.navigation__link.red {
+	color: red;
+}
+
+#khortytsia-island {
+	color: rgb(72, 255, 0);
+}
+
+[class*="ntr"] {
+	color: rgb(12, 119, 40);
+ }
+
+p.khortytsia-section__content {
+	color: rgb(129, 74, 12);
+}
+
+.sands-section__title,
+h3 {
+	color: blueviolet;
+}
+
+.sands-section p {
+	color: orange;
+}
+
+.catacombs-section .catacombs-section__content {
+	color: rgb(26, 15, 87);
+}
+
+.list * {
+	color: rgb(8, 154, 154);
+}
+
+.fortress-section > p {
+	color: blueviolet;
+}
+.fortress-section ~ div {
+	color: rgba(172, 26, 121, 0.902);
+}
+
+.fortress-section + .green-text {
+	color: rgba(28, 172, 26, 0.902);
+}
+
+.footer-link {
+	color: blue;
+}
+
+
+
+
+/*
+.content {
+}
+.content__item {
+}
+*/
+
