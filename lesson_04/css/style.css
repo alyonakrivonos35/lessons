@@ -95,6 +95,7 @@ body{
 }
 .tesla__model3 h2 {
 	color: #8dab05;
+	font-weight: 400;
 	text-shadow: 2px 1px 1px #2c3835a5;
 }
 .tesla__model3 span {
