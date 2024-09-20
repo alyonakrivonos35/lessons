@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'Angeme';
+	src: url('../fonts/Angeme-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Angeme';
+	src: url('../fonts/Angeme-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SAIBA-45';
+	src: url('../fonts/SAIBA45Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'ZT Neue Ralewe';
+	src: url('../fonts/ZTNeueRalewe-SemiBoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'ZT Neue Ralewe';
+	src: url('../fonts/ZTNeueRalewe-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'ZT Neue Ralewe';
+	src: url('../fonts/ZTNeueRalewe-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+

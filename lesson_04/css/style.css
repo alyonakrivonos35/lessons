@@ -1,0 +1,195 @@
+
+/* Підключення фрифтів */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+/* Локальне підключення шрифтів*/
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body{
+	font-size: 20px;
+}
+
+/* використання властивостей шрифту та тексту*/
+
+.header-menu__item {
+	font-size: 25px;
+	color: #a52a2a;
+	font-weight: 700;
+	line-height: 1;
+	font-family: "Angeme", sans-serif;
+}
+
+.tesla__introduction {
+	text-align: center;
+}
+
+.tesla__title {
+	font-family: "Angeme", sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-style: italic;
+	text-shadow: 4px 4px 2px #494545cf;
+}
+
+.tesla__subtitle {
+	font-size: 30px;
+	line-height: 2;
+	font-weight: 700;
+	text-align: center;
+}
+.tesla__text {
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.tesla__model1 {
+	font-family: "Angeme", sans-serif;
+}
+
+.tesla__model1 h2 {
+	color: #0d4927;
+}
+
+.tesla__model1 span {
+	color: #0d4927;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+.tesla__model1 .tesla__img {
+	text-align: right;
+}
+
+.tesla__model2 {
+	font-family: "ZT Neue Ralewe", serif;
+}
+
+.tesla__model2 h2 {
+	color: #0d2d49;
+	font-weight: 600;
+}
+
+.tesla__model2 span {
+	font-style: italic;
+	color: #0e78a2;
+	text-decoration: line-through;
+	text-decoration-color: #0d2d49;
+	text-decoration-style: dashed;
+}
+
+.tesla__model2 .tesla__img {
+	text-align: center;
+}
+
+.tesla__model3 {
+	font-family: "SAIBA-45", sans-serif;
+}
+.tesla__model3 h2 {
+	color: #8dab05;
+	text-shadow: 2px 1px 1px #2c3835a5;
+}
+.tesla__model3 span {
+	text-decoration: #0000ff wavy underline;
+	text-decoration-thickness: 2px;
+}
+.tesla__model4 {
+	font-style: oblique;
+	text-transform: capitalize;
+}
+
+.tesla__model4 h2 {
+	color: #7905ab;
+	white-space: nowrap;
+	
+}
+.tesla__model4 a {
+	color: #8a2be2;
+	text-decoration: underline;
+}
+
+.tesla__model4 .tesla__img {
+	text-align: center;
+}
+
+.tesla__model5 h2 {
+	color: #ab5505;
+}
+
+.tesla__model5 p {
+	text-transform: lowercase;
+}
+
+.tesla__model5 .tesla__img {
+	text-align: right;
+}
+
+.tesla__model6 h2 {
+	color: #1805ab;
+}
+.tesla__model6 p {
+	word-spacing: 10px;
+}
+.tesla__model6 .tesla__img {
+	text-align: center;
+}
+/* _______________________________________________________________________________*/
+
+.item-portfolio {
+	font-family: "Work Sans", sans-serif;
+}
+.item-portfolio__title {
+	color: #132238;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 1.32;
+}
+.item-portfolio__text {
+	color: #556070;
+	font-size: 18px;
+	line-height: 1.33;
+}
+.item-presentation {
+	font-family: "DM Sans", sans-serif;
+}
+.item-presentation__title {
+	color: #1E1B39;
+	font-size: 88px;
+	font-weight: 700;
+	line-height: 1.07;
+}
+.item-presentation__text {
+	color: #474464;
+	font-size: 24px;
+	line-height: 1.75;
+}
+.item-landing {
+	font-family: "Roboto", sans-serif;
+}
+.item-landing__title {
+	color: #091133;
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 1.32; 
+	letter-spacing: 1px;
+}
+.item-landing__text {
+	color: #505F98;
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+.footer {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+}
