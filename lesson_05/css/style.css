@@ -1,0 +1,217 @@
+
+/* Підключення фрифтів */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+/* Локальне підключення шрифтів*/
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+/*___________________________________________________________________*/
+.header {
+	background-color: #585555;
+	padding: 50px;
+}
+.header__title {
+	font-family: "Manrope", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	color: #830c0cd8;
+	text-align: center;
+}
+
+/*______   dark-them __________________________________________________*/
+
+.dark-theme {
+	padding: 100px 25px;
+	background-color: #141414;
+	font-family: "Manrope", sans-serif;
+	color: #999;
+}
+
+.dark-theme__container {
+	max-width: 1597px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.dark-theme__title {
+	color: #FFF;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 14px;
+}
+
+.dark-theme__text {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 80px;
+}
+
+.dark-theme__items { 
+	margin-left: -15px;
+	margin-right: -15px;
+	font-size: 0;
+}
+
+.item {
+	display: inline-block;
+	max-width: 33.333%;
+	margin-bottom: 15px;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.item__content {
+	background-color: #0F0F0F;
+	padding: 50px;
+}
+
+.item__header {
+	margin-bottom: 30px;
+}
+
+.item img {
+	max-width: 72px;
+	margin-right: 16px;
+	vertical-align: middle;
+}
+
+.item__subtitle {
+	display: inline;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	vertical-align: middle;
+}
+.item__text {
+	color:#999;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/*_____    landing       ___________________________________________*/
+
+.landing {
+	font-family: "Roboto", sans-serif;
+	max-width: 589px;
+	margin: 0 auto;
+	padding: 100px 25px;
+}
+
+.landing__title {
+	color: #091133;
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 1.32;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.landing__text {
+	color: #505F98;
+	font-size: 18px;
+	line-height: 1.667;
+	margin-bottom: 70px;
+}
+
+.landing__text p {
+	margin-bottom: 14px;
+}
+
+.landing__links {
+	font-size: 0;
+}
+
+.landing__button {
+	color: #FFF;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.62;
+	background-color: #111B47;
+	width: 189px;
+	padding: 5px;
+}
+
+.landing__button_1 {
+	margin-right: 30px;
+}
+
+/* ______   landing-page    _________________________________________________________________*/
+
+.landing-page {
+	font-family: "Roboto", sans-serif;
+	margin: 0 auto;
+	padding: 50px 25px;
+	max-width: 589px;
+}
+
+.landing-page__title {
+	color: #091133;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1.33;
+	margin-bottom: 16px;
+	
+}
+
+.landing-page__text {
+	color: #6F7CB2;
+	font-size: 16px;
+	line-height: 1.62;
+	margin-bottom: 70px;
+}
+
+.landing-page__text p {
+	margin-bottom: 10px;
+}
+
+.landing-page__items {
+	margin-left: -15px;
+	margin-right: -15px;
+	font-size: 0;
+}
+
+.landing-page__item {
+	display: inline-block;
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 30px;
+}
+
+.item-landing img{
+	max-width: 36px;
+	margin-bottom: 14px;
+}
+
+.item-landing__subtitle {
+	color: #091133;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.62;
+	margin-bottom: 6px;
+}
+
+.item-landing__text {
+	color: #5D6970;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/*______  footer  _____________________________________________________________*/
+
+.footer {
+	background-color: #585555;
+	padding: 50px;
+	font-family: "Manrope", sans-serif;
+	font-size: 20px;
+	color: #830c0cd8;
+}
