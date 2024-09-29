@@ -75,6 +75,7 @@
 	color: #391400;
 	font-size: 56px;
 	font-weight: 800;
+	text-transform: capitalize;
 	line-height: 1.14;
 	letter-spacing: -1px;
 	margin-bottom: 26px;
@@ -99,7 +100,7 @@
 }
 
 .item-portfolio__list span {
-	background: url("../img/portfolio/check.svg") left / 32px no-repeat;
+	background: url("../img/portfolio/check.svg") left top / 32px no-repeat;
 	padding-left: 48px;
 	min-height: 32px;
 	display: inline-block;
@@ -117,11 +118,11 @@
 
 .section-dark {
 	font-family: "Manrope", sans-serif;
+	background: #141414;
 }
 
 .section-dark__backgraund {
 	min-height: 861px;
-	width: 100%;
 	background:
 	url("../img/dark/abstract.png") center / 24% no-repeat, 
 	linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), 
@@ -131,8 +132,9 @@
 }
 
 .section-dark__page{
-	background: #141414;
+	
 	padding-bottom: 30px;
+	margin-top: -64px;
 }
 
 .section-dark__content {
@@ -144,6 +146,7 @@
 	color: #FFF;
 	font-size: 58px;
 	font-weight: 700;
+	text-transform: capitalize;
 	line-height: 1.5;
 	margin-bottom: 14px;
 }
@@ -163,11 +166,12 @@
 	color: #FFF;
 	font-size: 18px;
 	font-weight: 600;
+	text-transform: capitalize;
 	line-height: 1.5;
 }
 
 .section-dark__button span {
-	background: url("../img/dark/icon.svg") left / 28px no-repeat;
+	background: url("../img/dark/icon.svg") left top / 28px no-repeat;
 	padding-left: 32px;
 }
 
