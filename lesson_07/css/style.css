@@ -294,6 +294,10 @@ body {
 	padding-left: 13px;
 }
 
+.block-price__list li {
+	padding-left: 50px;
+}
+
 .block-price__list li:not(:last-child) {
 	margin-bottom: 26px;
 }
@@ -304,6 +308,7 @@ body {
 	height: 36px;
 	background: url("../img/price/check.png") 0 0 / 36px no-repeat;
 	margin-right: 14px;
+	margin-left: -50px;
 	vertical-align: middle;
 }
 
