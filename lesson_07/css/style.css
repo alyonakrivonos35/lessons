@@ -331,7 +331,7 @@ body {
 }
 
 .block-portfolio__item p {
-	color: rgba(57, 20, 0, 0.64);
+	color: #391400a3;
 	font-size: 16px;
 	line-height: 2;
 }
@@ -395,7 +395,6 @@ body {
 .block-portfolio__rectangle {
 	color: #391400;
 	font-size: 20px;
-	font-style: normal;
 	line-height: 1.6;
 	border-radius: 6px;
 	background: url("../img/portfolio/shape.svg") 32px 40px / 48px no-repeat,
