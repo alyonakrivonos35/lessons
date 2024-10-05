@@ -322,6 +322,7 @@ body {
 
 .block-portfolio__content {
 	max-width: 970px;
+	border-radius: 6px;
 	margin: 0 auto;
 }
 
