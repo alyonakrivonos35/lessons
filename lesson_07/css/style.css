@@ -384,6 +384,10 @@ body {
 	margin-bottom: 32px;
 }
 
+.block-portfolio__list_mark li {
+	padding-left: 24px;
+}
+
 .block-portfolio__list_mark li::before {
 	content: "";
 	width: 8px;
@@ -391,6 +395,7 @@ body {
 	background-color: #EF6D58;
 	border-radius: 50%;
 	margin-right: 16px;
+	margin-left: -24px;
 }
 
 .block-portfolio__list_num li {
