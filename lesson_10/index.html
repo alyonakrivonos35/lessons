@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 10</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">
+					Lesson 10
+				</h1>
+				<ul class="header__menu menu">
+					<li class="menu__item">
+						<a href="#practice" class="menu__link">Practice</a>
+						<ul class="sub-menu">
+							<li class="sub-menu__item"><a href="#relative" class="sub-menu__link">Position relative</a></li>
+							<li class="sub-menu__item"><a href="#z-index" class="sub-menu__link">Z-index</a></li>
+							<li class="sub-menu__item"><a href="#absolute" class="sub-menu__link">Position-absolute</a></li>
+							<li class="sub-menu__item"><a href="#sticky" class="sub-menu__link">Position-sticky</a></li>
+							<li class="sub-menu__item"><a href="#list" class="sub-menu__link">List</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a href="#agency" class="menu__link">Homework element 1</a></li>
+					<li class="menu__item"><a href="#portfolio" class="menu__link">Homework element 2</a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<div class="practice" id="practice">
+				<div class="practice__container">
+					<div class="practice__position-relative blocks" id="relative">
+						<div class="blocks__item">position: static;</div>
+						<div class="blocks__item">position: relative;<br>top: 20px;<br>left: 20px;</div>
+						<div class="blocks__item">position: relative;<br>bottom: 20px;<br>right: 20px;</div>
+						<div class="blocks__item">position: relative;<br>top: -20px;<br>left: -20px;</div>
+					</div>
+					<div class="practice__z-index blocks" id="z-index">
+						<div class="blocks__item">z-index:auto;</div>
+						<div class="blocks__item">z-index:auto;</div>
+						<div class="blocks__item">z-index:1;</div>
+						<div class="blocks__item">z-index:auto;</div>
+						<div class="blocks__item">
+							z-index: 1;
+							<p class="blocks__element">z-index: 10;</p>
+							<p class="blocks__element">z-index: 15;</p>
+						</div>
+						<div class="blocks__item">
+							z-index: 2;
+							<p class="blocks__element">z-index: 1;</p>
+						</div>
+					</div>
+					<div class="practice__position-absolute blocks" id="absolute">
+						<div class="blocks__item">position: absolute;</div>
+						<div class="blocks__item">position: absolute;<br>left: 50%;</div>
+					</div>
+					<div class="practice__position-sticky sticky-blocks" id="sticky">
+						<div class="sticky-blocks__item">1</div>
+						<div class="sticky-blocks__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident maiores vitae
+							temporibus, commodi consequatur nihil quo eveniet voluptatum, accusantium quod, distinctio
+							perferendis expedita veniam repellendus qui ipsam iusto molestias incidunt quas in. Temporibus esse
+							voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque velit delectus
+							magnam, dicta consequatur. Cupiditate.repellendus qui ipsam iusto molestias incidunt quas in.
+							Temporibus esse voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque
+							velit delectus
+							magnam, dicta consequatur. Cupiditate.
+						</div>
+						<div class="sticky-blocks__item sticky-blocks__item--green">2</div>
+						<div class="sticky-blocks__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident maiores vitae
+							temporibus, commodi consequatur nihil quo eveniet voluptatum, accusantium quod, distinctio
+							perferendis expedita veniam repellendus qui ipsam iusto molestias incidunt quas in. Temporibus esse
+							voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque velit delectus
+							magnam, dicta consequatur. Cupiditate.repellendus qui ipsam iusto molestias incidunt quas in.
+							Temporibus esse voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque
+							velit delectus
+							magnam, dicta consequatur. Cupiditate.
+						</div>
+						<div class="sticky-blocks__item">3</div>
+						<div class="sticky-blocks__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident maiores vitae
+							temporibus, commodi consequatur nihil quo eveniet voluptatum, accusantium quod, distinctio
+							perferendis expedita veniam repellendus qui ipsam iusto molestias incidunt quas in. Temporibus esse
+							voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque velit delectus
+							magnam, dicta consequatur. Cupiditate.repellendus qui ipsam iusto molestias incidunt quas in.
+							Temporibus ess voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque velit
+							delectus
+							magnam, dicta consequatur. Cupiditate.Cupiditate.repellendus qui ipsam iusto molestias incidunt
+							quas in.
+							Temporibus ess voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi neque velit
+							delectusTemporibus ess voluptatum aperiam tempore veritatis quam reprehenderit repellendus modi
+							neque velit
+							delectus
+							magnam, dicta consequatur. Cupiditate.
+							magnam, dicta consequatur. Cupiditate.
+						</div>
+					</div>
+					<div class="practice__pseudo-element" id="list">
+						<ul class="practice__list">
+							<li>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam modi iure
+								expedita vitae maxime a quis
+							</li>
+							<li>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							</li>
+							<li>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam modi iure
+								expedita vitae maxime a quis, nobis recusandae pariatur nulla accusamus? Est non cum quisquam
+								sequi ullam saepe ex.Suscipit laboriosam modi iure expedita vitae maxime a quis, nobis
+								recusandae pariatur nulla accusamus? Est non cum quisquam
+								sequi ullam saepe ex.
+							</li>
+							<li>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam modi iure
+								expedita vitae maxime a quis, nobis recusandae pariatur
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="block-agency" id="agency">
+				<div class=" block-agency__container">
+					<div class="block-agency__images images">
+						<div class="images__item images__item--laptop">
+							<img class="images__element" src="img/portfolio/laptop.webp" alt="gray laptop with black keyboard">
+						</div>
+						<div class="images__item images__item--stars">
+							<img class="images__element" src="img/portfolio/stars.svg" alt="three white stars">
+						</div>
+						<div class="images__item  images__item--block">
+							<img class="images__element" src="img/portfolio/block.svg"
+								alt="a white rectangle with an orange circle and gray lines">
+						</div>
+						<div class="images__item images__item--girl">
+							<img class="images__element" src="img/portfolio/girl.webp"
+								alt="smiling girl with dark hair in a red sweater">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-portfolio" id="portfolio">
+				<div class="block-portfolio__container">
+					<div class="block-portfolio__cards cards-portfolio">
+						<a href="#" class="cards-portfolio__link">
+							<div class="cards-portfolio__img">
+								<img src="img/portfolio/design.webp" alt="content image design sofa">
+							</div>
+							<div class="cards-portfolio__content">
+								<div class="cards-portfolio__label">Design</div>
+								<h2 class="cards-portfolio__title">SOFA</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer class=" footer">
+		<div class="footer__container">
+			<div class="footer__content">footer</div>
+		</div>
+	</footer>
+	</div>
+</body>
+
+</html>
