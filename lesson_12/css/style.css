@@ -62,19 +62,15 @@ body {
 
 .helicopter__body {
 	position: absolute;
-	top: 250px;
-	left: 40%;
-	animation: fly 6s ease-out;
+	animation: fly 6s ease-out forwards;
 }
 
 @keyframes fly {
 	0% {
-		top: 850px;
-		left: 80%;
+		transform: translate(1000px, 850px);
 	}
 	100% {
-		top: 250px;
-		left: 40%;
+		transform: translate(450px, 250px);
 	}
 }
 
@@ -300,39 +296,45 @@ body {
 
 .scenery__cloud--1 {
 	top: 100px;
-	left: -15%;
+	left: -300px;
 	animation: cloud-move 15s linear infinite;
 }
 
 @keyframes cloud-move {
 	0% {
-		left: -15%;
+		transform: translateX(-300px);
 	}
 	100% {
-		left: 100%;
+		transform: translateX(2300px);
+	}
+}
+
+@keyframes cloud-move-2 {
+	0% {
+		transform: translateX(-300px) scale(1.3);
+	}
+	100% {
+		transform: translateX(2300px) scale(1.3);
 	}
 }
 
 .scenery__cloud--2 {
 	top: 350px;
-	left: -15%;
-	transform: scale(1.2);
-	animation: cloud-move 15s linear infinite 4s;
+	left: -300px;
+	animation: cloud-move-2 15s linear infinite 4s;
 }
-
 
 .scenery__cloud--3 {
 	top: 100px;
-	left: -15%;
-	transform: scale(0.9);
+	left: -300px;
 	animation: cloud-move 15s linear infinite 8s;
 }
 
 .scenery__cloud--4 {
 	top: 240px;
-	left: -15%;
+	left: -300px;
 	transform: scale(1.5);
-	animation: cloud-move 15s linear infinite 12s;
+	animation: cloud-move-2 15s linear infinite 12s;
 }
 
 /*_______ дерева______________________________________*/
@@ -343,96 +345,90 @@ body {
 
 .scenery__tree--1 {
 	bottom: 0px;
-	left: 0px;
-	animation: tree-move-1 13s linear forwards;
+	animation: tree-move-1 11s linear forwards;
 }
 
 @keyframes tree-move-1 {
 	0% {
-		left: 0%;
+		transform: translateX(0vw);
 	} 
 	100% {
-		left: 100%;
+		transform: translateX(100vw);
 	} 
 }
 
 .scenery__tree--2 {
 	bottom: -40px;
-	left: 22%;
-	transform: rotateY(180deg);
-	animation: tree-move-2 9s linear forwards;
+	animation: tree-move-2 8.5s linear forwards;
 }
 
 @keyframes tree-move-2 {
 	0% {
-		left: 22%;
+		transform: translateX(22vw) rotateY(180deg);
 	} 
 	100% {
-		left: 100%;
+		transform: translateX(100vw) rotateY(180deg);
 	} 
 }
 
 .scenery__tree--3 {
 	bottom: -100px;
-	left: 45%;
 	animation: tree-move-3 6s linear forwards;
 }
 
 @keyframes tree-move-3 {
 	0% {
-		left: 45%;
+		transform: translateX(45vw);
 	} 
 	100% {
-		left: 100%;
+		transform: translateX(100vw);
 	} 
 }
 
 .scenery__tree--4 {
 	bottom: 0px;
-	left: 70%;
 	animation: tree-move-4 3s linear forwards;
 }
 
 @keyframes tree-move-4 {
 	0% {
-		left: 70%;
+		transform: translateX(70vw);
 	} 
 	100% {
-		left: 100%;
+		transform: translateX(100vw);
 	} 
 }
 
 .scenery__tree--5 {
 	bottom: -100px;
 	left: -400px;
-	animation: tree-move 15s linear infinite 1s;
+	animation: tree-move 15s linear infinite;
 }
 
 .scenery__tree--6 {
 	bottom: 0;
 	left: -400px;
-	animation: tree-move 15s linear infinite 5s;
+	animation: tree-move 15s linear infinite 4s;
 }
 
 .scenery__tree--7 {
 	bottom: -40px;
 	left: -400px;
-	transform: rotateY(180deg);
-	animation: tree-move 15s linear infinite 9s;
+	animation: tree-move 15s linear infinite 8s;
 }
 
 .scenery__tree--8 {
 	bottom: 0;
 	left: -400px;
-	animation: tree-move 15s linear infinite 13s;
+	animation: tree-move 15s linear infinite 12s;
 }
 
 @keyframes tree-move {
 	0% {
-		left: -400px;
+		transform: translateX(-400px);
 	} 
 	100% {
-		left: 100%;
+		transform: translateX(2300px);
 	} 
 }
 
@@ -446,53 +442,39 @@ body {
 	max-width: 150px;
 }
 .scenery__box--1 {
-	top: 300px;
-	left: 45%;
-	opacity: 0;
 	visibility: hidden;
-	transform: rotate(-20deg);
+	opacity: 0;
 	animation: box-move-1 6s linear infinite 9s;
 }
 .scenery__box--2 {
-	top: 300px;
-	left: 45%;
-	opacity: 0;
 	visibility: hidden;
-	transform: rotate(15deg);
+	opacity: 0;
 	animation: box-move-2 6s linear infinite 12s;
 }
 
 @keyframes box-move-1 {
 	0% {
-		top: 300px;
-		left: 45%;
 		opacity: 1;
 		visibility: visible;
-		transform: rotate(-20deg) scale(0.5);
+		transform: translate(45vw, 300px) scale(0.5) rotate(-20deg);
 	} 
 	100% {
-		top: 850px;
-		left: 70%;
 		opacity: 1;
 		visibility: visible;
-		transform: rotate(-20deg) scale(1);
+		transform: translate(80vw, 850px) scale(1) rotate(-20deg);
 	}
 }
 
 @keyframes box-move-2 {
 	0% {
-		top: 300px;
-		left: 45%;
 		opacity: 1;
 		visibility: visible;
-		transform: rotate(20deg) scale(0.5);
+		transform: translate(45vw, 300px) scale(0.5) rotate(20deg);
 	} 
 	100% {
-		top: 850px;
-		left: 70%;
 		opacity: 1;
 		visibility: visible;
-		transform: rotate(20deg) scale(1);
+		transform: translate(80vw, 850px) scale(1) rotate(20deg);
 	}
 }
 
