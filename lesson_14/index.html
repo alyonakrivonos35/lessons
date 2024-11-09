@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">
+					Lesson 14
+				</h1>
+			</div>
+		</header>
+		<main class="page">
+			<div class="dark-theme">
+				<div class="dark-theme__container">
+					<form class="dark-theme__form form-dark" action="#" method="get" enctype="multipart/form-data">
+						<div class="form-dark__inputs">
+							<div class="form-dark__item">
+								<label class="form-dark__label" for="input-01">First Name</label>
+								<input id="input-01" placeholder="Enter First Name" name="form[]" class="form-dark__input"
+									type="text" required tabindex="1">
+							</div>
+							<div class="form-dark__item">
+								<label class="form-dark__label" for="input-02">Last Name</label>
+								<input id="input-02" placeholder="Enter Last Name" name="form[]" class="form-dark__input"
+									type="text" required tabindex="2">
+							</div>
+							<div class="form-dark__item">
+								<label class="form-dark__label" for="input-03">Email</label>
+								<input id="input-03" placeholder="Enter your Email" name="form[]" class="form-dark__input"
+									type="email" tabindex="3">
+							</div>
+							<div class="form-dark__item">
+								<label class="form-dark__label" for="input-04">Phone Number</label>
+								<input id="input-04" placeholder="Enter Phone Number" name="form[]" class="form-dark__input"
+									type="tel" required tabindex="4">
+							</div>
+							<div class="form-dark__text">
+								<label for="textarea-01" class="form-dark__label">Message</label>
+								<textarea class="form-dark__textarea" name="form[]" id="textarea-01"
+									placeholder="Enter your Message" tabindex="5"></textarea>
+							</div>
+						</div>
+						<div class="form-dark__footer">
+							<div class="form-dark__checkbox checkbox">
+								<input class="checkbox__input" id="input-05" name="form[]" value="agree" type="checkbox"
+									required>
+								<label for="input-05" class="checkbox__label">
+									I agree with Terms of Use and Privacy Policy
+								</label>
+							</div>
+							<button class="form-dark__button" type="submit">Send Message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="white-theme">
+				<div class="white-theme__container">
+					<div class="white-theme__text">
+						There are many variations of passages of Lorem Ipsu available,
+						but the majority have suffered alte.
+					</div>
+					<form class="white-theme__form form-white" action="#" method="get" enctype="multipart/form-data">
+						<input id="input-06" name="form[]" placeholder="Name*" class="form-white__input" type="text" required
+							tabindex="6">
+						<input id="input-07" name="form[]" placeholder="Email*" class="form-white__input" type="email"
+							required tabindex="7">
+						<input id="input-08" name="form[]" placeholder="Location" class="form-white__input" tabindex="8">
+						<div class="form-white__items">
+							<input id="input-09" name="form[]" placeholder="Budget*" class="form-white__input" required
+								tabindex="9">
+							<input id="input-10" name="form[]" placeholder="Subject*" class="form-white__input" required
+								tabindex="10">
+						</div>
+						<textarea class="form-white__textarea" placeholder="Message*" name="form[]" id="textarea-02" required
+							tabindex="11"></textarea>
+						<button class="form-white__button" type="submit"><span>Submit</span></button>
+					</form>
+				</div>
+			</div>
+	</div>
+	</main>
+	<footer class=" footer">
+		<div class="footer__container">
+			<div class="footer__content">footer</div>
+		</div>
+	</footer>
+	</div>
+</body>
+
+</html>
