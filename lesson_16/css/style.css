@@ -268,12 +268,18 @@ body {
 	margin-bottom: 24px;
 }
 
-.content__image {
+.content__title span {
+	position: relative;
+}
+
+.content__title span::after {
+	content: "";
 	position: absolute;
-	left: 54%;
-	top: 3.82%;
-	width: 28.84%;
-	height: 28.84%;
+	top: -50%;
+	right: -30%;
+	width: 92.5%;
+	height: 185%;
+	background: url(../img/modern-studio/star.svg) 0 0 / 100% no-repeat;
 	z-index: -1;
 }
 
@@ -526,7 +532,7 @@ body {
 }
 
 @media (min-width: 767.98px) {
-	.content__image {
+	.content__title span::after {
 		animation: scale 2s linear infinite;
 	}
 	.block-images__top-right {
