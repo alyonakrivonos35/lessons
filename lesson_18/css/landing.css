@@ -299,15 +299,15 @@
 	margin-bottom: 220px;
 }
 
-
 .item-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
 }
+
 .item-content__left {
-	flex: 0 1 48,64%;
+	flex: 0 0 49%;
 	aspect-ratio: 540 / 387;
 }
 
@@ -318,7 +318,7 @@
 }
 
 .item-content__right {
-	flex: 0 1 40.09%;
+	flex: 0 0 45%;
 }
 
 .item-content__right .content-block__text:not(:last-child) {
@@ -339,11 +339,11 @@
 		row-gap: 30px;
 	}
 	.item-content__left {
-		flex-grow: 1;
 		order: 2;
+		flex: 1 1 100%;
 	}
 	.item-content__right {
-		flex-grow: 1;
+		flex: 1 1 100%;
 	}
 }
 
