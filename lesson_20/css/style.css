@@ -892,6 +892,7 @@ body {
 
 .item-portfolio__content {
 	padding: 2rem;
+	
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -918,7 +919,6 @@ body {
 	font-size: 0.875rem;
 	line-height: 1.42; /* 142.857% */
 	margin-bottom: 1.25rem;
-
 	flex-grow: 1;
 }
 
@@ -1350,7 +1350,7 @@ body {
 	margin-bottom: 1rem;
 }
 address {
-	font-style: normal;
+	font-style: normal !important;
 }
 
 .contact__cards {
