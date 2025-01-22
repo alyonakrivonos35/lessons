@@ -772,18 +772,6 @@ body {
 
 /*-----------  card-movie ---------------------------------------------------------------------------*/
 .card-movie {
-  border-radius: 0.75rem;
-  transition: all 0.3s;
-}
-@media (any-hover: hover) {
-  .card-movie:hover .card-movie__body {
-    border: 0.0625rem solid rgba(98, 95, 95, 0.4509803922);
-  }
-  .card-movie:hover .card-genres__footer::after {
-    animation: move-icon 1s ease-in-out;
-  }
-}
-.card-movie__body {
   flex: 0 0 18.8%;
   min-width: 15.1875rem;
   border-radius: 0.75rem;
@@ -794,8 +782,13 @@ body {
   scroll-snap-align: start;
   transition: all 0.3s;
 }
-@media (max-width: 47.99875em) {
-  .card-movie__body {
+@media (any-hover: hover) {
+  .card-movie:hover {
+    border: 0.0625rem solid rgba(98, 95, 95, 0.4509803922);
+  }
+}
+@media (any-hover: hover) and (max-width: 47.99875em) {
+  .card-movie {
     padding: 0.9375rem;
   }
 }

@@ -739,31 +739,20 @@ body {
 /*-----------  card-movie ---------------------------------------------------------------------------*/
 
 .card-movie {
+	flex: 0 0 18.8%;
+	min-width: toRem(243);
 	border-radius: toRem(12);
+	border: toRem(1) solid $borderColor;
+	background: $bgColor2;
+	padding: toRem(20);
+	overflow: hidden;
+	scroll-snap-align: start;
 	transition: all 0.3s;
 
 	@media (any-hover: hover) {
 		&:hover {
-			.card-movie__body {
 				border: toRem(1) solid #625f5f73;
-			}
-
-			.card-genres__footer::after {
-				animation: move-icon 1s ease-in-out;
-			}
 		}
-	}
-
-	&__body {
-		flex: 0 0 18.8%;
-		min-width: toRem(243);
-		border-radius: toRem(12);
-		border: toRem(1) solid $borderColor;
-		background: $bgColor2;
-		padding: toRem(20);
-		overflow: hidden;
-		scroll-snap-align: start;
-		transition: all 0.3s;
 
 		@media (max-width: toEm(767.98)) {
 			padding: toRem(15);
