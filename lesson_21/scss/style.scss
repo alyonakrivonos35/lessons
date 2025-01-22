@@ -523,9 +523,9 @@ body {
 		padding: toRem(50);
 
 		@media (max-width: toEm(767.98)) {
-			padding: toRem(40);
+			padding: toRem(30);
 		}
-		@media (max-width: toEm(391)) {
+		@media (max-width: toEm(500)) {
 			padding: toRem(15);
 		}
 	}
@@ -662,7 +662,7 @@ body {
 		.card-genres__body {
 			min-width: toRem(311);
 			padding: toRem(30);
-			
+
 			@media (max-width: toEm(767.98)) {
 				padding: toRem(20);
 			}
