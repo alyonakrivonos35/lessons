@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 21</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#hero" class="header__logo" aria-label="go to main page">
+					<img src="img/logo.svg" alt="image logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item active">
+								<a href="#" class="menu__link">Movies & Shows</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Support</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Subscriptions</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<button class="actions-header__button button-header" type="button" aria-label="go to search">
+						<img src="img/icons/dandruff.svg" alt="icon dandruff">
+					</button>
+					<button class="actions-header__button button-header" type="button" aria-label="go to notifications">
+						<img src="img/icons/bell.svg" alt="icon bell">
+					</button>
+					<button class="actions-header__icon icon-menu" type="button"
+						aria-label="open menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<article class="hero__item item-hero">
+						<div class="item-hero__background">
+							<img src="img/hero/avengers-endgamevengers.webp" alt="movie Avengers Endgame">
+						</div>
+						<div class="item-hero__content">
+							<h1 class="item-hero__title">Avengers : Endgame</h1>
+							<div class="item-hero__text">
+								<p>
+									With the help of remaining allies, the Avengers must assemble once more in order to undo
+									Thanos's actions and undo the chaos to the universe, no matter what consequences may be in
+									store, and no matter who they face... Avenge the fallen.
+								</p>
+							</div>
+							<div class="item-hero__buttons">
+								<button class="item-hero__button button-item button-item--icon" type="button"><span>Play
+										Now</span></button>
+								<div class="item-hero__actions">
+									<button class="item-hero__action button-action button-action--dark" type="button"
+										aria-label="subscribe">
+										<img src="img/icons/plus.svg" alt="icon plus">
+									</button>
+									<button class="item-hero__action button-action button-action--dark" type="button"
+										aria-label="like">
+										<img src="img/icons/like.svg" alt="icon like">
+									</button>
+									<button class="item-hero__action button-action button-action--dark" type="button"
+										aria-label="volume">
+										<img src="img/icons/volume.svg" alt="icon volume">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="item-hero__slider slider">
+							<button class="slider__button button-action button-action--dark" type="button"
+								aria-label="go back">
+								<img src="img/icons/arrow-left.svg" alt="icon arrow left">
+							</button>
+							<div class="slider__navigation">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<button class="slider__button button-action button-action--dark" type="button"
+								aria-label="go to next">
+								<img src="img/icons/arrow-right.svg" alt="icon arrow right">
+							</button>
+						</div>
+					</article>
+				</div>
+			</section>
+			<div class="movies">
+				<div class="movies__container">
+					<button class="movies__button button-item" type="button">Movies</button>
+					<section class="movies__genres genres">
+						<div class="genres__body">
+							<div class="genres__header header-movies">
+								<h2 class="header-movies__title">Our Genres</h2>
+								<div class="header-movies__slider slider">
+									<button class="slider__button button-action" type="button" aria-label="go back">
+										<img src="img/icons/arrow-left.svg" alt="icon arrow left">
+									</button>
+									<div class="slider__navigation">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<button class="slider__button button-action" type="button" aria-label="go to next">
+										<img src="img/icons/arrow-right.svg" alt="icon arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="genres__list">
+								<li class="genres__item">
+									<article class="genres__card card-genres">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres/action-01.jpg" alt="Punch film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/action-02.jpg" alt="Black Panter film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/action-03.jpg" alt="Batman film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/action-04.jpg" alt="Expendables 2 film">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<h3 class="card-genres__title">Action</h3>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres__item">
+									<article class="genres__card card-genres">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres/adventure-01.jpg" alt="Archer film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/adventure-02.jpg" alt="Jungle Cruise film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/adventure-03.jpg" alt="Jack the giant slayer film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/adventure-04.jpg" alt="Golden Compassfilm">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<h3 class="card-genres__title">Adventure</h3>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres__item">
+									<article class="genres__card card-genres">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres/comedy-01.jpg" alt="Good newwz film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/comedy-02.jpg" alt="Central intelligents film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/comedy-03.jpg" alt="Bhool Bhulaiyaa 2 film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/comedy-04.jpg" alt="Udancho film">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<h3 class="card-genres__title">Comedy</h3>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres__item">
+									<article class="genres__card card-genres">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres/drama-01.jpg" alt="Family drama film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/drama-02.jpg" alt="Joker film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/drama-03.jpg" alt="Painkillers film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/drama-04.jpg" alt="Bhola film">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<h3 class="card-genres__title">Drama</h3>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres__item">
+									<article class="genres__card card-genres">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres/horror-01.jpg" alt="Us film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/horror-02.jpg" alt="Scream Panter film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/horror-03.jpg" alt="Flasheater film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres/horror-04.jpg" alt="Human centipede film">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<h3 class="card-genres__title">Horror</h3>
+											</div>
+										</a>
+									</article>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="movies__genres-top genres-top">
+						<div class="genres-top__body">
+							<div class="genres-top__header header-movies">
+								<h2 class="header-movies__title">Popular Top 10 In Genres</h2>
+								<div class="header-movies__slider slider">
+									<button class="slider__button button-action" type="button" aria-label="go back">
+										<img src="img/icons/arrow-left.svg" alt="icon arrow left">
+									</button>
+									<div class="slider__navigation">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<button class="slider__button button-action" type="button" aria-label="go to next">
+										<img src="img/icons/arrow-right.svg" alt="icon arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="genres-top__list">
+								<li class="genres-top__item">
+									<article class="genres-top__card card-genres card-genres--big">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/action-01.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/action-02.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/action-03.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/action-04.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<div>
+													<div class="card-genres__label">Top 10 In</div>
+													<h3 class="card-genres__title">Action</h3>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres-top__item">
+									<article class="genres-top__card card-genres card-genres--big">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/adventure-01.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/adventure-02.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/adventure-03.jpg"
+														alt="Jack the giant slayer film">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/adventure-04.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<div>
+													<div class="card-genres__label">Top 10 In</div>
+													<h3 class="card-genres__title">Adventur</h3>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres-top__item">
+									<article class="genres-top__card card-genres card-genres--big">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/comedy-01.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/comedy-02.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/comedy-03.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/comedy-04.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<div>
+													<div class="card-genres__label">Top 10 In</div>
+													<h3 class="card-genres__title">Comedy</h3>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="genres-top__item">
+									<article class="genres-top__card card-genres card-genres--big">
+										<a href="#" class="card-genres__body">
+											<div class="card-genres__content">
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/drama-01.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/drama-02.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/drama-03.jpg" alt="movie poster">
+												</div>
+												<div class="card-genres__image">
+													<img src="img/movies/genres-top/drama-04.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-genres__footer">
+												<div>
+													<div class="card-genres__label">Top 10 In</div>
+													<h3 class="card-genres__title">Drama</h3>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="movies__trending trending">
+						<div class="trending__body">
+							<div class="trending__header header-movies">
+								<h2 class="header-movies__title">Trending Now</h2>
+								<div class="header-movies__slider slider">
+									<button class="slider__button button-action" type="button" aria-label="go back">
+										<img src="img/icons/arrow-left.svg" alt="icon arrow left">
+									</button>
+									<div class="slider__navigation">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<button class="slider__button button-action" type="button" aria-label="go to next">
+										<img src="img/icons/arrow-right.svg" alt="icon arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="trending__list">
+								<li class="trending__item">
+									<article class="trending__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/trending/01.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__footer">
+												<div class="card-movie__time">1h 30min</div>
+												<div class="card-movie__views">2K</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="trending__item">
+									<article class="trending__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/trending/02.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__footer">
+												<div class="card-movie__time">1h 30min</div>
+												<div class="card-movie__views">2K</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="trending__item">
+									<article class="trending__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/trending/03.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__footer">
+												<div class="card-movie__time">1h 30min</div>
+												<div class="card-movie__views">2K</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="trending__item">
+									<article class="trending__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/trending/04.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__footer">
+												<div class="card-movie__time">1h 30min</div>
+												<div class="card-movie__views">2K</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="trending__item">
+									<article class="trending__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/trending/05.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__footer">
+												<div class="card-movie__time">1h 30min</div>
+												<div class="card-movie__views">2K</div>
+											</div>
+										</a>
+									</article>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="movies__releases releases">
+						<div class="releases__body">
+							<div class="releases__header header-movies">
+								<h2 class="header-movies__title">New Releases</h2>
+								<div class="header-movies__slider slider">
+									<button class="slider__button button-action" type="button" aria-label="go back">
+										<img src="img/icons/arrow-left.svg" alt="icon arrow left">
+									</button>
+									<div class="slider__navigation">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<button class="slider__button button-action" type="button" aria-label="go to next">
+										<img src="img/icons/arrow-right.svg" alt="icon arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="releases__list">
+								<li class="releases__item">
+									<article class="releases__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/releases/01.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__date">Released at 14 April 2023</div>
+										</a>
+									</article>
+								</li>
+								<li class="releases__item">
+									<article class="releases__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/releases/02.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__date">Released at 22 April 2023</div>
+										</a>
+									</article>
+								</li>
+								<li class="releases__item">
+									<article class="releases__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/releases/03.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__date">Released at 13 April 2023</div>
+										</a>
+									</article>
+								</li>
+								<li class="releases__item">
+									<article class="releases__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/releases/04.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__date">Released at 19 April 2023</div>
+										</a>
+									</article>
+								</li>
+								<li class="releases__item">
+									<article class="releases__card card-movie">
+										<a href="#" class="card-movie__body">
+											<div class="card-movie__content">
+												<div class="card-movie__image">
+													<img src="img/movies/releases/05.jpg" alt="movie poster">
+												</div>
+											</div>
+											<div class="card-movie__date">Released at 11 April 2023</div>
+										</a>
+									</article>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class=" footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>>
