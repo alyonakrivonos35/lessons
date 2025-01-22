@@ -523,10 +523,11 @@ body {
 		padding: toRem(50);
 
 		@media (max-width: toEm(767.98)) {
-			padding: toRem(30);
+			padding-inline: toRem(30);
+			padding-block: 35px;
 		}
 		@media (max-width: toEm(500)) {
-			padding: toRem(15);
+			padding-inline: toRem(15);
 		}
 	}
 

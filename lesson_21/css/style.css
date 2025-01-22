@@ -572,12 +572,13 @@ body {
 }
 @media (max-width: 47.99875em) {
   .movies__container {
-    padding: 1.875rem;
+    padding-inline: 1.875rem;
+    padding-block: 35px;
   }
 }
 @media (max-width: 31.25em) {
   .movies__container {
-    padding: 0.9375rem;
+    padding-inline: 0.9375rem;
   }
 }
 .movies__button {
