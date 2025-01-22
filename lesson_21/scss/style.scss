@@ -582,6 +582,7 @@ body {
 	}
 
 	&__body {
+		flex: 0 0 18.4%;
 		min-width: toRem(201);
 		border-radius: toRem(12);
 		border: toRem(1) solid $borderColor;
@@ -661,6 +662,10 @@ body {
 		.card-genres__body {
 			min-width: toRem(311);
 			padding: toRem(30);
+			
+			@media (max-width: toEm(767.98)) {
+				padding: toRem(20);
+			}
 		}
 		.card-genres__content {
 			gap: toRem(10);
