@@ -746,7 +746,7 @@ body {
 
 .card-movie {
 	flex: 0 0 18.8%;
-	min-width: toRem(243);
+	min-width: toRem(245);
 	border-radius: toRem(12);
 	border: toRem(1) solid $borderColor;
 	background: $bgColor2;
@@ -754,6 +754,10 @@ body {
 	overflow: hidden;
 	scroll-snap-align: start;
 	transition: all 0.3s;
+
+	@media (max-width: toEm(767.98)) {
+		padding: toRem(15);
+	}
 
 	@media (any-hover: hover) {
 		&:hover {

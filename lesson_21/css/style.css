@@ -780,7 +780,7 @@ body {
 /*-----------  card-movie ---------------------------------------------------------------------------*/
 .card-movie {
   flex: 0 0 18.8%;
-  min-width: 15.1875rem;
+  min-width: 15.3125rem;
   border-radius: 0.75rem;
   border: 0.0625rem solid #262626;
   background: #1A1A1A;
@@ -788,6 +788,11 @@ body {
   overflow: hidden;
   scroll-snap-align: start;
   transition: all 0.3s;
+}
+@media (max-width: 47.99875em) {
+  .card-movie {
+    padding: 0.9375rem;
+  }
 }
 @media (any-hover: hover) {
   .card-movie:hover {
