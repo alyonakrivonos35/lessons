@@ -22,9 +22,9 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Послуги</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Відгуки</a></li>
+							<li class="menu__item"><a href="#services" class="menu__link">Послуги</a></li>
+							<li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
+							<li class="menu__item"><a href="#reviews" class="menu__link">Відгуки</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -57,14 +57,14 @@
 								<li>Гнучкий графік та індивідуальний підхід</li>
 							</ul>
 						</div>
-						<a href="#" class="about__button button"><span>Детальніше</span></a>
+						<a href="#services" class="about__button button"><span>Детальніше</span></a>
 					</div>
 					<div class="about__image">
 						<img src="img/main/about/girl.webp" alt="girl doing cleaning">
 					</div>
 				</div>
 			</section>
-			<section class="services">
+			<section id="services" class="services">
 				<div class="services__container">
 					<h2 class="services__title title">Наші послуги</h2>
 					<div class="services__body">
@@ -72,7 +72,7 @@
 							<div class="services__bg">
 								<img class="services__img" src="img/main/services/room.webp" alt="room image">
 							</div>
-							<a href="#" class="services__link">
+							<a href="#spring-cleaning" class="services__link">
 								<div class="services__header">
 									<img class="services__icon" src="img/icons/home.svg" alt="house icon">
 									<h3 class="services__name">Генеральне прибирання</h3>
@@ -87,7 +87,7 @@
 							<div class="services__bg">
 								<img class="services__img" src="img/main/services/tools.webp" alt="tools image">
 							</div>
-							<a href="#" class="services__link">
+							<a href="#repair-cleaning" class="services__link">
 								<div class="services__header">
 									<img class="services__icon" src="img/icons/tools.svg" alt="tools icon">
 									<h3 class="services__name">Прибирання після ремонту</h3>
@@ -102,7 +102,7 @@
 							<div class="services__bg">
 								<img class="services__img" src="img/main/services/window.webp" alt="window image">
 							</div>
-							<a href="#" class="services__link">
+							<a href="#window" class="services__link">
 								<div class="services__header">
 									<img class="services__icon" src="img/icons/window.svg" alt="window icon">
 									<h3 class="services__name">Миття вікон</h3>
@@ -117,7 +117,7 @@
 							<div class="services__bg">
 								<img class="services__img" src="img/main/services/more_services.webp" alt="services image">
 							</div>
-							<a href="#" class="services__link">
+							<a href="#additional" class="services__link">
 								<div class="services__header">
 									<img class="services__icon" src="img/icons/cleaning.svg" alt="icon">
 									<h3 class="services__name">Додаткові послуги</h3>
@@ -132,7 +132,7 @@
 							<div class="services__bg">
 								<img class="services__img" src="img/main/services/office.webp" alt="office image">
 							</div>
-							<a href="#" class="services__link">
+							<a href="#office" class="services__link">
 								<div class="services__header">
 									<img class="services__icon" src="img/icons/computer.svg" alt="computer">
 									<h3 class="services__name">Прибирання офісів</h3>
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="spring-cleaning">
+			<section id="spring-cleaning" class="spring-cleaning">
 				<div class="spring-cleaning__container">
 					<h2 class="spring-cleaning__title title">Генеральне прибирання</h2>
 					<article class="spring-cleaning__item-info item-info">
@@ -200,7 +200,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="repair-cleaning">
+			<section id="repair-cleaning" class="repair-cleaning">
 				<div class="repair-cleaning__container">
 					<h2 class="repair-cleaning__title title">Прибирання після ремонту</h2>
 					<article class="repair-cleaning__item-info item-info">
@@ -250,7 +250,19 @@
 					</article>
 				</div>
 			</section>
-			<section class="additional-cleaning">
+			<div class="call">
+				<div class="call__container">
+					<div class="call__content">
+						<p class="call__title">Ми працюємо, ви відпочиваєте! Телефонуйте!</p>
+						<p class="call__text">Зв'яжіться з нами і опишіть проблему, фахівці вже готові вирушати на об'єкт.</p>
+					</div>
+					<div class="call__numbers">
+						<a class="call__number" href="tel:+380661116809"><span>+380661116809</span></a>
+						<a class="call__number" href="tel:+380966966339"><span>+380966966339</span></a>
+					</div>
+				</div>
+			</div>
+			<section id="additional" class="additional-cleaning">
 				<div class="additional-cleaning__container">
 					<h2 class="additional-cleaning__title title">Додаткові послуги</h2>
 					<article class="additional-cleaning__item-info item-info">
@@ -271,7 +283,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="office-cleaning">
+			<section id="office" class="office-cleaning">
 				<div class="office-cleaning__container">
 					<h2 class="office-cleaning__title title">Прибирання офісів</h2>
 					<article class="office-cleaning__item-info item-info item-info__reverse">
@@ -292,7 +304,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="window-cleaning">
+			<section id="window" class="window-cleaning">
 				<div class="window-cleaning__container">
 					<div class="window-cleaning__image">
 						<img src="img/main/window_cleaning/window.webp" alt="window">
@@ -331,7 +343,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<section id="reviews" class="reviews">
 				<div class="reviews__container">
 					<h2 class="reviews__title title">ВІДГУКИ</h2>
 					<p class="reviews__text">Що про нас говорять наші клієнти?</p>
@@ -354,9 +366,70 @@
 					</div>
 				</div>
 			</section>
+			<section class="works">
+				<div class="works__container">
+					<h2 class="works__title title">ДО/ПІСЛЯ</h2>
+					<div class="works__slider slider-works swiper">
+						<div class="slider-works__wrapper swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/main/works/slide1_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide1_after.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide2_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide2_after.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide3_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide3_after.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide4_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide4_after.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide5_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide5_after.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide6_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide6_after.jpg" alt="works">
+							</div>
+						</div>
+						<div class="slider-works__pagination swiper-pagination"></div>
+						<div class="slider-works__next swiper-button-next"></div>
+						<div class="slider-works__prev swiper-button-prev"></div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<a href="#" class="footer__logo">
+					<img class="footer__img" src="img/logo.png" alt="Logo">
+					<span class="footer__name">Crystal clean</span>
+				</a>
+				<div id="contacts" class="footer__contacts">
+					<a class="footer__number" href="tel:+380661116809"><span>+380661116809</span></a>
+					<a class="footer__number" href="tel:+380966966339"><span>+380966966339</span></a>
+					<p class="footer__city"><span>м.Харків</span></p>
+				</div>
+				<div class="footer__messengers">
+					<a class="footer__messenger" href="#"><img src="img/icons/tg.png" alt="telegram"></a>
+					<a class="footer__messenger" href="#"><img src="img/icons/viber.png" alt="viber"></a>
+				</div>
 			</div>
 		</footer>
 	</div>

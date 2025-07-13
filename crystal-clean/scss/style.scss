@@ -16,6 +16,9 @@
 @import "_variables.scss";
 
 /* Основні стилі */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	line-height: 1.5;
 	font-size: toRem(18);
@@ -161,7 +164,8 @@ body {
 
 .services {
 	background-color: #69c2f231;
-	padding-block: toRem(50);
+	padding-block-start: toRem(70);
+	padding-block-end: toRem(50);
 	// .services__container
 	&__container {
 	}
@@ -169,7 +173,7 @@ body {
 	// .services__title
 	&__title {
 		text-align: center;
-		margin-bottom: toRem(30);
+		margin-bottom: toRem(20);
 	}
 
 	// .services__body
@@ -303,10 +307,10 @@ body {
 
 .spring-cleaning {
 	padding-block-start: toRem(100);
-	padding-block-end: toRem(50);
+	padding-block-end: toRem(30);
 	@media (max-width: toEm(767.98)) {
 		padding-block-start: toRem(50);
-		padding-block-end: toRem(25);
+		padding-block-end: toRem(15);
 	}
 	// .spring-cleaning__container
 	&__container {
@@ -332,9 +336,11 @@ body {
 //======== repair-cleaning =====================================================================================
 
 .repair-cleaning {
-	padding-block: toRem(50);
+	padding-block-start: toRem(70);
+	padding-block-end: toRem(30);
 	@media (max-width: toEm(767.98)) {
-		padding-block: toRem(25);
+		padding-block-start: toRem(50);
+		padding-block-end: toRem(15);
 	}
 		// .repair-cleaning__container
 
@@ -360,10 +366,12 @@ body {
 
 //====================================================================================================
 .additional-cleaning {
-		padding-block: toRem(50);
-		@media (max-width: toEm(767.98)) {
-			padding-block: toRem(25);
-		}
+	padding-block-start: toRem(70);
+	padding-block-end: toRem(30);
+	@media (max-width: toEm(767.98)) {
+		padding-block-start: toRem(50);
+		padding-block-end: toRem(15);
+	}
 		// .additional-cleaning__container
 
 		&__container {
@@ -386,10 +394,12 @@ body {
 
 //====================================================================================================
 .office-cleaning {
-		padding-block: toRem(50);
-		@media (max-width: toEm(767.98)) {
-			padding-block: toRem(25);
-		}
+	padding-block-start: toRem(70);
+	padding-block-end: toRem(30);
+	@media (max-width: toEm(767.98)) {
+		padding-block-start: toRem(50);
+		padding-block-end: toRem(15);
+	}
 		// .office-cleaning__container
 
 		&__container {
@@ -412,10 +422,12 @@ body {
 }
 //=======  window-cleaning   ===============================================================================
 .window-cleaning {
-		padding-block: toRem(50);
-		@media (max-width: toEm(767.98)) {
-			padding-block: toRem(25);
-		}
+	padding-block-start: toRem(70);
+	padding-block-end: toRem(30);
+	@media (max-width: toEm(767.98)) {
+		padding-block-start: toRem(50);
+		padding-block-end: toRem(15);
+	}
 		// .window-cleaning__container
 		&__container {
 			display: flex;
@@ -557,10 +569,12 @@ body {
 
 //========================================================================================
 .reviews {
-		padding-block: toRem(50);
-		@media (max-width: toEm(767.98)) {
-			padding-block: toRem(25);
-		}
+	padding-block-start: toRem(70);
+	padding-block-end: toRem(30);
+	@media (max-width: toEm(767.98)) {
+		padding-block-start: toRem(50);
+		padding-block-end: toRem(15);
+	}
 		// .reviews__container
 		&__container {
 		}
@@ -582,6 +596,120 @@ body {
 		&__slider {
 		}
 }
+
+//========================================================================================
+.works {
+	padding-block-start: toRem(50);
+		@media (max-width: toEm(767.98)) {
+			padding-block-start: toRem(25);
+		}
+		// .works__container
+
+		&__container {
+			padding-bottom: 50px;
+			background-color: #69c2f231;
+			border-radius: toRem(20);
+			@media (max-width: toEm(767.98)) {
+			padding-block: toRem(25);
+			}
+		}
+
+		// .works__title
+
+		&__title {
+			text-align: center;
+			margin-bottom: toRem(15);
+		}
+
+		// .works__slider
+
+		&__slider {
+		}
+}
+
+//=======================================================================================
+.call {
+		background-color: var(--title-color);
+		color: var(--white-color);
+		padding: toRem(30);
+		@media (max-width: toEm(767.98)) {
+			padding: toRem(20);
+		}
+		// .call__container
+		&__container {
+			display: flex;
+			gap: toRem(30);
+			align-items: center;
+			justify-content: space-between;
+			@media (max-width: toEm(399.98)) {
+				flex-wrap: wrap;
+				gap: toRem(15);
+			}
+		}
+
+		// .call__content
+
+		&__content {
+		}
+
+		// .call__title
+
+		&__title {
+			font-size: toRem(30);
+			&:not(:last-child) {
+				margin-bottom: toRem(20);
+			}
+			@media (max-width: toEm(767.98)) {
+				font-size: toRem(25);
+				&:not(:last-child) {
+				margin-bottom: toRem(15);
+				}
+			}
+			@media (max-width: toEm(499.98)) {
+				font-size: toRem(18);
+				text-align: center;
+			}
+		}
+
+		// .call__text
+
+		&__text {
+			@media (max-width: toEm(499.98)) {
+				display: none;
+			}
+		}
+
+		// .call__numbers
+
+		&__numbers {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: toRem(10);
+			@media (max-width: toEm(399.98)) {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+		}
+
+		// .call__number
+
+		&__number {
+			border: 2px solid var(--white-color);
+			border-radius: toRem(15);
+			padding: toRem(10);
+			transition: box-shadow 0.3s;
+			@media (any-hover: hover) {
+				&:hover {
+					box-shadow: 0 2px 4px rgba(242, 239, 239, 0.395);
+					transition: box-shadow 0.3s;
+				}
+			}
+		}
+}
+
+
+
 
 
 

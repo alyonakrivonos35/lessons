@@ -7,10 +7,11 @@ const html = document.documentElement;
 function windowLoad() {
 	html.classList.add('loaded');
 	slidersInit()
+	slidersGallaryInit()
 }
 
 function slidersInit() {
-	var swiper = new Swiper(".swiper", {
+	var swiper = new Swiper(".reviews__slider", {
 		slidesPerView: 1,
 		loop: true,
 		sped: 600,
@@ -40,3 +41,27 @@ function slidersInit() {
 	}
 }
 
+function slidersGallaryInit() {
+	var swiperGallary = new Swiper(".slider-works", {
+		slidesPerView: 2,
+		spaceBetween: 15,
+		freeMode: true,
+		pagination: {
+			el: ".slider-works__pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".slider-works__next",
+			prevEl: ".slider-works__prev",
+		},
+		breakpoints: {
+			599.98: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+			767.98: {
+				slidesPerView: 4,
+			},
+		},
+	});
+}
