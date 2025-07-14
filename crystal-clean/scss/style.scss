@@ -190,8 +190,10 @@ body {
 		flex: 0 1 32%;
 		padding: toRem(20);
 		border-radius: toRem(20);
-		transition: box-shadow 0.3s;
 		overflow: hidden;
+		opacity: 0;
+		transition: all 0.5s;
+		transform: translate(0px, 15%);
 		@media (any-hover: hover) {
 			&:hover {
 				box-shadow: 0px 4px 11px 4px rgba(130, 124, 124, 0.329);
@@ -206,6 +208,16 @@ body {
 		@media (max-width: toEm(767.98)) {
 			flex: 1 1 100%;
 			padding: toRem(15);
+		}
+		.--animate & {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			@for $i from 1 through 6 {
+				$delay: $i * 0.1;
+				&:nth-child(#{$i}) {
+					transition-delay: #{$delay}s;
+				}
+			}
 		}
 	}
 
