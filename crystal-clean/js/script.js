@@ -43,7 +43,7 @@ function slidersInit() {
 
 function slidersGallaryInit() {
 	var swiperGallary = new Swiper(".slider-works", {
-		slidesPerView: 2,
+		slidesPerView: 1.5,
 		spaceBetween: 15,
 		freeMode: true,
 		pagination: {

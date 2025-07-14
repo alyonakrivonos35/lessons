@@ -23,7 +23,7 @@ body {
 	line-height: 1.5;
 	font-size: toRem(18);
 	font-family: "Manrope", sans-serif;
-	color: black;
+	color: #000000;
 	opacity: 0;
 	transition: opacity 1.5s;
 	.loaded & {
@@ -165,7 +165,7 @@ body {
 .services {
 	background-color: #69c2f231;
 	padding-block-start: toRem(70);
-	padding-block-end: toRem(50);
+	padding-block-end: toRem(70);
 	// .services__container
 	&__container {
 	}
@@ -188,7 +188,6 @@ body {
 	&__card {
 		position: relative;
 		flex: 0 1 32%;
-		//background-color: var(--white-color);
 		padding: toRem(20);
 		border-radius: toRem(20);
 		transition: box-shadow 0.3s;
@@ -307,10 +306,8 @@ body {
 
 .spring-cleaning {
 	padding-block-start: toRem(100);
-	padding-block-end: toRem(30);
 	@media (max-width: toEm(767.98)) {
-		padding-block-start: toRem(50);
-		padding-block-end: toRem(15);
+		padding-block-start: toRem(70);
 	}
 	// .spring-cleaning__container
 	&__container {
@@ -336,11 +333,11 @@ body {
 //======== repair-cleaning =====================================================================================
 
 .repair-cleaning {
-	padding-block-start: toRem(70);
-	padding-block-end: toRem(30);
+	padding-block-start: toRem(100);
+	padding-block-end: toRem(50);
 	@media (max-width: toEm(767.98)) {
-		padding-block-start: toRem(50);
-		padding-block-end: toRem(15);
+		padding-block-start: toRem(70);
+		padding-block-end: toRem(30);
 	}
 		// .repair-cleaning__container
 
@@ -366,11 +363,9 @@ body {
 
 //====================================================================================================
 .additional-cleaning {
-	padding-block-start: toRem(70);
-	padding-block-end: toRem(30);
+	padding-block-start: toRem(100);
 	@media (max-width: toEm(767.98)) {
-		padding-block-start: toRem(50);
-		padding-block-end: toRem(15);
+		padding-block-start: toRem(70);
 	}
 		// .additional-cleaning__container
 
@@ -394,11 +389,9 @@ body {
 
 //====================================================================================================
 .office-cleaning {
-	padding-block-start: toRem(70);
-	padding-block-end: toRem(30);
+	padding-block-start: toRem(100);
 	@media (max-width: toEm(767.98)) {
-		padding-block-start: toRem(50);
-		padding-block-end: toRem(15);
+		padding-block-start: toRem(70);
 	}
 		// .office-cleaning__container
 
@@ -422,11 +415,9 @@ body {
 }
 //=======  window-cleaning   ===============================================================================
 .window-cleaning {
-	padding-block-start: toRem(70);
-	padding-block-end: toRem(30);
+	padding-block-start: toRem(100);
 	@media (max-width: toEm(767.98)) {
-		padding-block-start: toRem(50);
-		padding-block-end: toRem(15);
+		padding-block-start: toRem(70);
 	}
 		// .window-cleaning__container
 		&__container {
@@ -629,7 +620,7 @@ body {
 
 //=======================================================================================
 .call {
-		background-color: var(--title-color);
+		background-color: #0c2860;
 		color: var(--white-color);
 		padding: toRem(30);
 		@media (max-width: toEm(767.98)) {

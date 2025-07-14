@@ -95,7 +95,7 @@ body {
   line-height: 1.5;
   font-size: 1.125rem;
   font-family: "Manrope", sans-serif;
-  color: black;
+  color: #000000;
   opacity: 0;
   transition: opacity 1.5s;
 }
@@ -307,6 +307,7 @@ body {
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
     padding-block: 0.3125rem;
+    line-height: 1.2;
   }
 }
 .header__logo {
@@ -328,7 +329,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5625rem;
-  color: white;
+  color: var(--white-color);
 }
 @media (max-width: 62.06125em) {
   .header__name {
@@ -355,7 +356,7 @@ body {
   justify-self: end;
   font-size: 1.375rem;
   font-weight: 700;
-  color: white;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -399,7 +400,7 @@ body {
   inline-size: 1.5625rem;
 }
 .header__icon path {
-  fill: rgb(8, 222, 229);
+  fill: #08dee5;
 }
 @media (max-width: 24.99875em) {
   .header__icon {
@@ -421,7 +422,7 @@ body {
   }
 }
 .menu__link {
-  color: white;
+  color: var(--white-color);
   font-weight: 600;
   font-size: 1.125rem;
   padding-bottom: 0.125rem;
@@ -452,7 +453,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(98, 100, 107);
+  background-color: #62646b;
   padding-block: 1.25rem;
 }
 .footer__container {
@@ -494,7 +495,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5625rem;
-  color: white;
+  color: var(--white-color);
 }
 @media (max-width: 31.25em) {
   .footer__name {
@@ -655,7 +656,7 @@ body {
 .services {
   background-color: rgba(105, 194, 242, 0.1921568627);
   padding-block-start: 4.375rem;
-  padding-block-end: 3.125rem;
+  padding-block-end: 4.375rem;
 }
 .services__title {
   text-align: center;
@@ -775,12 +776,10 @@ body {
 
 .spring-cleaning {
   padding-block-start: 6.25rem;
-  padding-block-end: 1.875rem;
 }
 @media (max-width: 47.99875em) {
   .spring-cleaning {
-    padding-block-start: 3.125rem;
-    padding-block-end: 0.9375rem;
+    padding-block-start: 4.375rem;
   }
 }
 .spring-cleaning__title {
@@ -797,13 +796,13 @@ body {
 }
 
 .repair-cleaning {
-  padding-block-start: 4.375rem;
-  padding-block-end: 1.875rem;
+  padding-block-start: 6.25rem;
+  padding-block-end: 3.125rem;
 }
 @media (max-width: 47.99875em) {
   .repair-cleaning {
-    padding-block-start: 3.125rem;
-    padding-block-end: 0.9375rem;
+    padding-block-start: 4.375rem;
+    padding-block-end: 1.875rem;
   }
 }
 .repair-cleaning__title {
@@ -820,13 +819,11 @@ body {
 }
 
 .additional-cleaning {
-  padding-block-start: 4.375rem;
-  padding-block-end: 1.875rem;
+  padding-block-start: 6.25rem;
 }
 @media (max-width: 47.99875em) {
   .additional-cleaning {
-    padding-block-start: 3.125rem;
-    padding-block-end: 0.9375rem;
+    padding-block-start: 4.375rem;
   }
 }
 .additional-cleaning__title {
@@ -839,13 +836,11 @@ body {
   }
 }
 .office-cleaning {
-  padding-block-start: 4.375rem;
-  padding-block-end: 1.875rem;
+  padding-block-start: 6.25rem;
 }
 @media (max-width: 47.99875em) {
   .office-cleaning {
-    padding-block-start: 3.125rem;
-    padding-block-end: 0.9375rem;
+    padding-block-start: 4.375rem;
   }
 }
 .office-cleaning__title {
@@ -858,13 +853,11 @@ body {
   }
 }
 .window-cleaning {
-  padding-block-start: 4.375rem;
-  padding-block-end: 1.875rem;
+  padding-block-start: 6.25rem;
 }
 @media (max-width: 47.99875em) {
   .window-cleaning {
-    padding-block-start: 3.125rem;
-    padding-block-end: 0.9375rem;
+    padding-block-start: 4.375rem;
   }
 }
 .window-cleaning__container {
@@ -1020,7 +1013,7 @@ body {
   margin-bottom: 0.9375rem;
 }
 .call {
-  background-color: var(--title-color);
+  background-color: #0c2860;
   color: var(--white-color);
   padding: 1.875rem;
 }

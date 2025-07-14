@@ -1,5 +1,5 @@
 .footer {
-	background-color: rgb(98, 100, 107);
+	background-color: #62646b;
 	padding-block: toRem(20);
 		// .footer__container
 
@@ -43,7 +43,7 @@
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: toRem(25);
-			color: white;
+			color: var(--white-color);
 			@media (max-width: toEm(500)) {
 				font-size: toRem(20);
 			}

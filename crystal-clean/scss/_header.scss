@@ -22,6 +22,7 @@
 				row-gap: toRem(5);
 				column-gap: toRem(20);
 				padding-block: toRem(5);
+				line-height: 1.2;
 			}
 		}
 
@@ -45,7 +46,7 @@
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: toRem(25);
-			color: white;
+			color: var(--white-color);
 			@media (max-width: toEm(992.98)) {
 				font-size: toRem(20);
 			}
@@ -73,7 +74,7 @@
 
 			font-size: toRem(22);
 			font-weight: 700;
-			color: white;
+			color: var(--white-color);
 
 			display: flex;
 			align-items: center;
@@ -115,7 +116,7 @@
 		&__icon {
 			inline-size: toRem(25);
 			path {
-				fill: rgb(8, 222, 229);
+				fill: #08dee5;
 			}
 			@media (max-width: toEm(399.98)) {
 				display: none;
@@ -153,7 +154,7 @@
 		// .menu__link
 
 		&__link {
-			color: white;
+			color: var(--white-color);
 			font-weight: 600;
 			font-size: toRem(18);
 			padding-bottom: toRem(2);
