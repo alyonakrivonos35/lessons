@@ -414,7 +414,7 @@
 }
 
 .column-additional {
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
 	gap: toRem(20);
 

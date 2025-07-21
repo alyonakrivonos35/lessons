@@ -427,7 +427,7 @@ body {
   font-weight: 600;
 }
 .column-additional {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 1.25rem;
 }
