@@ -105,3 +105,91 @@ function scrollActions() {
 		observer.observe(animElement)
 	})
 }
+
+//==== Calculate ===============================================
+const inputs = document.querySelectorAll('input');
+const totalPriceElement = document.querySelector('.result-calc__element');
+const radioType = document.querySelectorAll('input[name="serviceType"]');
+const checkboxType = document.querySelectorAll('input[name="additionalService"]')
+const numberType = document.querySelectorAll('input[name="additional"]')
+
+// Площа приміщення
+let range = document.querySelector('#range');
+let rangeCalcValue = document.querySelector('.range-calc__value');
+rangeCalcValue.innerText = range.value;
+range.addEventListener("input", (event) => {
+	rangeCalcValue.innerText = event.target.value;
+});
+
+// Площа вікон
+const windowRange = document.querySelector('#window-range-calc');
+const windowCalcValue = document.querySelector('.window-range__value');
+windowCalcValue.innerText = windowRange.value;
+windowRange.addEventListener("input", (event) => {
+	windowCalcValue.innerText = event.target.value;
+});
+
+// Перемикач для площі приміщення / вікон
+for (let radio of radioType) {
+	radio.addEventListener('input', function () {
+		if (radio.id === 'window-repair' || radio.id === 'window-type' && radio.checked === true) {
+			document.querySelector('.window-range').classList.remove('invisible');
+			document.querySelector('.range-calc').classList.add('invisible');
+
+		} else {
+			document.querySelector('.window-range').classList.add('invisible');
+			document.querySelector('.range-calc').classList.remove('invisible');
+		}
+	})
+}
+
+function calculate() {
+	let radioValue = 1;
+	let checkboxValue = 0;
+	let numberValue = 0;
+
+	for (let radio of radioType) {
+		if (radio.checked === true) {
+			radio.closest('label').classList.add('checked');
+			if (radio.id === 'window-repair' || radio.id === 'window-type') {
+				radioValue = radio.value * parseFloat(windowRange.value);
+			} else {
+				radioValue = radio.value * parseFloat(range.value);
+			}
+		} else {
+			radio.closest('label').classList.remove('checked');
+		}
+	}
+
+	for (let checkbox of checkboxType) {
+		if (checkbox.checked === true) {
+			checkboxValue += parseFloat(checkbox.value);
+			checkbox.closest('label').classList.add('checked');
+		} else {
+			checkbox.closest('label').classList.remove('checked');
+		}
+	}
+
+	for (let number of numberType) {
+		if (number.value) {
+			numberValue += number.value * number.dataset.price;
+			number.classList.add('checked');
+		} else {
+			number.classList.remove('checked');
+		}
+	}
+
+	let totalPrice = radioValue + checkboxValue + numberValue;
+	totalPriceElement.innerText = totalPrice;
+}
+
+for (let input of inputs) {
+	input.addEventListener('input', function () {
+		calculate();
+	})
+}
+
+
+
+
+

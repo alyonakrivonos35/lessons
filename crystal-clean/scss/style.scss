@@ -191,7 +191,6 @@ body {
 		padding: toRem(20);
 		border-radius: toRem(20);
 		overflow: hidden;
-		opacity: 0;
 		transition: all 0.5s;
 		transform: translate(0px, 15%);
 		@media (any-hover: hover) {
@@ -209,13 +208,17 @@ body {
 			flex: 1 1 100%;
 			padding: toRem(15);
 		}
-		.--animate & {
-			transform: translate(0px, 0px);
-			opacity: 1;
-			@for $i from 1 through 6 {
-				$delay: $i * 0.1;
-				&:nth-child(#{$i}) {
-					transition-delay: #{$delay}s;
+		@media (min-width: toEm(767.99)) {
+			opacity: 0;
+
+			.--animate & {
+				transform: translate(0px, 0px);
+				opacity: 1;
+				@for $i from 1 through 6 {
+					$delay: $i * 0.1;
+					&:nth-child(#{$i}) {
+						transition-delay: #{$delay}s;
+					}
 				}
 			}
 		}
@@ -710,6 +713,8 @@ body {
 			}
 		}
 }
+
+
 
 
 

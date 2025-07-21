@@ -262,6 +262,112 @@
 					</div>
 				</div>
 			</div>
+			<div class="calculator">
+				<div class="calculator__container">
+					<h2 class="calculator__title title">Калькулятор</h2>
+					<div class="calculator__body">
+						<div class="calculator__services services-calc">
+							<h3 class="services-calc__title title title--small">Вид прибирання:</h3>
+							<div class="services-calc__wrapper">
+								<label class="services-calc__label checked" for="general-type">
+									<input id="general-type" class="services-calc__input" type="radio" name="serviceType"
+										value="50" checked>
+									<span class="services-calc__text">Генеральне</span>
+								</label>
+								<label class="services-calc__label" for="repair-type">
+									<input id="repair-type" class="services-calc__input" type="radio" name="serviceType"
+										value="55">
+									<span class="services-calc__text">Після ремонту</span>
+								</label>
+								<label class="services-calc__label" for="office-type">
+									<input id="office-type" class="services-calc__input" type="radio" name="serviceType"
+										value="50">
+									<span class="services-calc__text">Офіс</span>
+								</label>
+								<label class="services-calc__label" for="window-type">
+									<input id="window-type" class="services-calc__input" type="radio" name="serviceType"
+										value="110">
+									<span class="services-calc__text">Миття вікон</span>
+								</label>
+								<label class="services-calc__label" for="window-repair">
+									<input id="window-repair" class="services-calc__input" type="radio" name="serviceType"
+										value="160">
+									<span class="services-calc__text">Миття вікон після ремонту</span>
+								</label>
+							</div>
+						</div>
+						<div class="calculator__range range-calc">
+							<h3 class="range-calc__title title title--small">Вкажіть площу приміщення:</h3>
+							<div class="range-calc__wrapper">
+								<label class="range-calc__label" for="range">
+									<input id="range" class="range-calc__input" type="range" value="0" name="squareFootage"
+										min="0" max="200" step="1">
+								</label>
+								<span class="range-calc__result"><span class="range-calc__value">0</span>м²</span>
+							</div>
+						</div>
+						<div class="calculator__window window-range invisible">
+							<h3 class="window-range__title title title--small">Вкажіть площу вікон:</h3>
+							<div class="window-range__wrapper">
+								<label class="window-range__label" for="window-range-calc">
+									<input id="window-range-calc" class="window-range__input" type="range" value="0"
+										name="windowSquareFootage" min="0" max="50" step="1">
+								</label>
+								<span class="window-range__result"><span class="window-range__value">50</span>м²</span>
+							</div>
+						</div>
+						<div class="calculator__additional additional-calc">
+							<h3 class="additional-calc__title title title--small">Додаткові послуги:</h3>
+							<div class="additional-calc__wrapper">
+								<label class="additional-calc__label" for="microwaves">
+									<input id="microwaves" class="additional-calc__input" type="checkbox"
+										name="additionalService" value="240">
+									<span class="additional-calc__text">Мікрохвильовка</span>
+								</label>
+								<label class="additional-calc__label" for="refrigerator">
+									<input id="refrigerator" class="additional-calc__input" type="checkbox"
+										name="additionalService" value="440">
+									<span class="additional-calc__text">Холодильник</span>
+								</label>
+								<label class="additional-calc__label" for="oven">
+									<input id="oven" class="additional-calc__input" type="checkbox" name="additionalService"
+										value="380">
+									<span class="additional-calc__text">Духова шафа</span>
+								</label>
+								<label class="additional-calc__label" for="dishes">
+									<input id="dishes" class="additional-calc__input" type="checkbox" name="additionalService"
+										value="100">
+									<span class="additional-calc__text">Мийка посуду</span>
+								</label>
+								<label class="additional-calc__label" for="coffeeMachines">
+									<input id="coffeeMachines" class="additional-calc__input" type="checkbox"
+										name="additionalService" value="190">
+									<span class="additional-calc__text">Кавомашина</span>
+								</label>
+							</div>
+							<div class="additional-calc__column column-additional">
+								<label class="column-additional__label" for="curtains">
+									<input id="curtains" data-price="55" class="column-additional__input" type="number" min="0"
+										name="additional" placeholder="0">
+									<span class="column-additional__text">Прання штор, м²:</span>
+								</label>
+								<label class="column-additional__label" for="jalousie">
+									<input id="jalousie" data-price="55" class="column-additional__input" type="number" min="0"
+										name="additional" placeholder="0">
+									<span class="column-additional__text">Чистка жалюзі, м²:</span>
+								</label>
+							</div>
+						</div>
+						<div class="calculator__result result-calc">
+							<h3 class="result-calc__sum">Разом: <span class="result-calc__element">0</span> грн.</h3>
+							<p class="result-calc__text">
+								Ціни вказані як інформаційні та можуть
+								відрізнятися від фактичної вартості прибирання
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			<section id="additional" class="additional-cleaning">
 				<div class="additional-cleaning__container">
 					<h2 class="additional-cleaning__title title">Додаткові послуги</h2>
@@ -372,6 +478,12 @@
 					<div class="works__slider slider-works swiper">
 						<div class="slider-works__wrapper swiper-wrapper">
 							<div class="swiper-slide">
+								<video src="img/main/works/slide9_before.MP4" controls></video>
+							</div>
+							<div class="swiper-slide">
+								<video src="img/main/works/slide9_after.MP4" controls></video>
+							</div>
+							<div class="swiper-slide">
 								<img src="img/main/works/slide1_before.jpg" alt="works">
 							</div>
 							<div class="swiper-slide">
@@ -407,6 +519,18 @@
 							<div class="swiper-slide">
 								<img src="img/main/works/slide6_after.jpg" alt="works">
 							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide7_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide7_after.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide8_before.jpg" alt="works">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main/works/slide8_after.jpg" alt="works">
+							</div>
 						</div>
 						<div class="slider-works__pagination swiper-pagination"></div>
 						<div class="slider-works__next swiper-button-next"></div>
@@ -427,8 +551,12 @@
 					<p class="footer__city"><span>м.Харків</span></p>
 				</div>
 				<div class="footer__messengers">
-					<a class="footer__messenger" href="#"><img src="img/icons/tg.png" alt="telegram"></a>
-					<a class="footer__messenger" href="#"><img src="img/icons/viber.png" alt="viber"></a>
+					<a class="footer__messenger" target="_blank" href="https://t.me/+380966966339">
+						<img src="img/icons/tg.png" alt="telegram">
+					</a>
+					<a class="footer__messenger" target="_blank" href="viber://chat?number=%2B380966966339">
+						<img src="img/icons/viber.png" alt="viber">
+					</a>
 				</div>
 			</div>
 		</footer>
