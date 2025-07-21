@@ -374,7 +374,6 @@
 			display: flex;
 			gap: toRem(15);
 			flex-wrap: wrap;
-			margin-bottom: toRem(20);
 		}
 
 		// .additional-calc__label
@@ -414,6 +413,7 @@
 }
 
 .column-additional {
+	margin-bottom: toRem(20);
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: toRem(20);
