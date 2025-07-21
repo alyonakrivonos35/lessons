@@ -432,7 +432,7 @@ body {
   gap: 1.25rem;
 }
 .column-additional__label {
-  display: flex;
+  display: inline-flex;
   flex-direction: row-reverse;
   gap: 0.9375rem;
   text-align: center;
