@@ -872,7 +872,7 @@ body {
   }
   .card-payments__icon {
     width: 1.5rem;
-    height: 24;
+    height: 1.5rem;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -937,7 +937,7 @@ body {
   z-index: 1;
 }
 .crediet-card {
-  margin-bottom: 2rem;
+  margin-bottom: 3.125rem;
 }
 .crediet-card__container {
   display: flex;
@@ -960,7 +960,8 @@ body {
 .crediet-card__image img {
   width: 100%;
   height: 100%;
-  aspect-ratio: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 37.5em) {
   .crediet-card__image {
@@ -983,7 +984,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.375rem 0.9375rem;
+  gap: 3.125rem 0.9375rem;
 }
 @media (min-width: 37.5em) {
   .mobile-banking__container {
@@ -999,7 +1000,8 @@ body {
 .mobile-banking__image img {
   width: 100%;
   height: 100%;
-  aspect-ratio: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 37.5em) {
   .mobile-banking__image {
@@ -1031,7 +1033,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
-  gap: 2.0625rem 0.9375rem;
+  gap: 3.4375rem 0.9375rem;
   position: relative;
   z-index: 1;
 }
