@@ -1,4 +1,4 @@
-//import { flsModules } from '../files/modules.js';
+const mediaQuery = window.matchMedia("(min-width: 768px)");
 
 class Parallax {
 	constructor(elements) {
@@ -20,6 +20,7 @@ class Parallax {
 	}
 
 }
+
 Parallax.Each = class {
 	constructor(parent) {
 		this.parent = parent;
@@ -86,6 +87,14 @@ Parallax.Each = class {
 		}
 	}
 }
-if (document.querySelectorAll('[data-prlx-parent]')) {
-	const prlx = new Parallax(document.querySelectorAll('[data-prlx-parent]'));
+
+function handleWidthChange(e) {
+	if (e.matches) {
+		if (document.querySelectorAll('[data-prlx-parent]')) {
+			const prlx = new Parallax(document.querySelectorAll('[data-prlx-parent]'));
+		}
+	}
 }
+
+handleWidthChange(mediaQuery);
+mediaQuery.addEventListener("change", handleWidthChange);
